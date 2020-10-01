@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trang chủ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/datedropper/2.0/datedropper.min.css"
+      integrity="sha512-b3G++vj/Z9EQMoVJaza9C48TzmHjcQKDNqXeLRoBzVD8DmFv0f6Pp/hGQW81ok1rOYxfZbpnlpoXXyJ06Aolcw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header d-flex align-items-center justify-content-between">
+          <img class="header__logo" src="resource/images/logo.png" alt="logo" />
+
+          <div class="header__menu">
+            <ul>
+              <li><a href="#" class="header__menuItem active">Trang chủ</a></li>
+              <li><a href="#" class="header__menuItem">Giới thiệu</a></li>
+              <li><a href="#" class="header__menuItem">Hỗ trợ</a></li>
+            </ul>
+          </div>
+
+          <div class="header__right">
+            <a href="#" class="header__rightItem"
+              >Trở thành chủ nhà/người tổ chức</a
+            >
+          </div>
+          <div class="header__rightUser">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-user"></i>
+            <div class="header__userMenu">
+              <ul>
+                <li><a href="#">Đăng ký</a></li>
+                <li><a href="#">Đăng nhập</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="header-mobile">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="header-mobile__item">
+                <i class="fas fa-home"></i>
+                <p>Trang chủ</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="header-mobile__item">
+                <i class="fas fa-network-wired"></i>
+                <p>Giới thiệu</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="header-mobile__item">
+                <i class="fas fa-hands-helping"></i>
+                <p>Giới thiệu</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="header-mobile__item">
+                <i class="fas fa-users"></i>
+                <p>Người dùng</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <div
+      class="banner d-flex justify-content-center align-items-center"
+      style="
+        background-image: url('https://a0.muscache.com/im/pictures/18084f37-67e0-400f-bfd8-55eea0e89508.jpg');
+      "
+    >
+      <div class="container">
+        <div class="clientForm">
+          <form action="">
+            <div class="clientForm__item">
+              Địa điểm
+              <select class="place-chooser" name="places" id="place-chooser">
+                <option value="HN">Hà Nội</option>
+                <option value="NA">Nghệ An</option>
+                <option value="HCM">Hồ Chí Minh</option>
+              </select>
+            </div>
+            <div class="clientForm__item">
+              Ngày khởi hành
+              <input id="start-date" type="text" />
+            </div>
+            <div class="clientForm__item">
+              Ngày rời đi
+              <input id="end-date" type="text" />
+            </div>
+            <div class="clientForm__item">
+              Số người
+              <select class="number-chooser" name="places">
+                <option value="1">1 người</option>
+                <option value="2">2 người</option>
+                <option value="3">3 người</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div class="heading">
+          <h3>Trải nghiệm kỳ nghỉ tuyệt vời</h3>
+          <p>Combo khách sạn - vé máy bay - đưa đón sân bay giá tốt nhất</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Top motel -->
+    <div class="topMotel">
+      <div class="container">
+        <h2 class="headLine text-center">Top nhà nghỉ</h2>
+        <p class="subHeadLine text-center">Nhanh tay đặt ngay. Để mai sẽ lỡ</p>
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="singlePost">
+                <a href="">
+                  <img
+                    src="https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720"
+                    alt=""
+                  />
+                  <div class="singlePost__content">
+                    <h3 class="title">Chỗ ở độc đáo</h3>
+                    <p class="rating">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                    </p>
+                    <p class="price">$151.12/đêm</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="singlePost">
+                <a href="">
+                  <img
+                    src="https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720"
+                    alt=""
+                  />
+                  <div class="singlePost__content">
+                    <h3 class="title">Chỗ ở độc đáo</h3>
+                    <p class="rating">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                    </p>
+                    <p class="price">$151.12/đêm</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="singlePost">
+                <a href="">
+                  <img
+                    src="https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720"
+                    alt=""
+                  />
+                  <div class="singlePost__content">
+                    <h3 class="title">Chỗ ở độc đáo</h3>
+                    <p class="rating">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                    </p>
+                    <p class="price">$151.12/đêm</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="singlePost">
+                <a href="">
+                  <img
+                    src="https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720"
+                    alt=""
+                  />
+                  <div class="singlePost__content">
+                    <h3 class="title">Chỗ ở độc đáo</h3>
+                    <p class="rating">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                    </p>
+                    <p class="price">$151.12/đêm</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="singlePost">
+                <a href="">
+                  <img
+                    src="https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720"
+                    alt=""
+                  />
+                  <div class="singlePost__content">
+                    <h3 class="title">Chỗ ở độc đáo</h3>
+                    <p class="rating">
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                      <span><i class="fas fa-star"></i></span>
+                    </p>
+                    <p class="price">$151.12/đêm</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            ...
+          </div>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <a href="#" class="more">Xem thêm</a>
+      </div>
+    </div>
+
+    <!-- Place -->
+    <div class="places">
+      <div class="container">
+        <h2 class="headLine text-center">Địa điểm nổi tiếng</h2>
+        <p class="subHeadLine text-center">
+          Lên rừng xuống biển. Trọn vẹn Việt Nam
+        </p>
+        <!-- Masonry -->
+        <div class="grid d-flex justify-content-center">
+          <div class="grid-sizer"></div>
+          <div
+            class="grid-item grid-item--width2"
+            style="
+              background-image: url('//cdn1.ivivu.com/iVivu/2019/03/07/16/phuquoc-755x190.jpg');
+            "
+          >
+            <div class="content">
+              <h3 class="text-light">Nha trang</h3>
+              <p class="text-light">214 nhà nghỉ</p>
+            </div>
+          </div>
+          <div
+            class="grid-item grid-item--width2"
+            style="
+              background-image: url('//cdn1.ivivu.com/iVivu/2019/03/07/16/phuquoc-755x190.jpg');
+            "
+          >
+            <div class="content">
+              <h3 class="text-light">Nha trang</h3>
+              <p class="text-light">214 nhà nghỉ</p>
+            </div>
+          </div>
+          <div
+            class="grid-item grid-item"
+            style="
+              background-image: url('//cdn1.ivivu.com/iVivu/2019/03/07/16/phuquoc-755x190.jpg');
+            "
+          >
+            <div class="content">
+              <h3 class="text-light">Nha trang</h3>
+              <p class="text-light">214 nhà nghỉ</p>
+            </div>
+          </div>
+          <div
+            class="grid-item grid-item"
+            style="
+              background-image: url('//cdn1.ivivu.com/iVivu/2019/03/07/16/phuquoc-755x190.jpg');
+            "
+          >
+            <div class="content">
+              <h3 class="text-light">Nha trang</h3>
+              <p class="text-light">214 nhà nghỉ</p>
+            </div>
+          </div>
+          <div
+            class="grid-item grid-item--width2"
+            style="
+              background-image: url('//cdn1.ivivu.com/iVivu/2019/03/07/16/phuquoc-755x190.jpg');
+            "
+          >
+            <div class="content">
+              <h3 class="text-light">Nha trang</h3>
+              <p class="text-light">214 nhà nghỉ</p>
+            </div>
+          </div>
+          <div
+            class="grid-item grid-item--width2"
+            style="
+              background-image: url('//cdn1.ivivu.com/iVivu/2019/03/07/16/phuquoc-755x190.jpg');
+            "
+          >
+            <div class="content">
+              <h3 class="text-light">Nha trang</h3>
+              <p class="text-light">214 nhà nghỉ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Posts -->
+    <div class="post">
+      <div class="container">
+        <h2 class="headLine text-center">Kinh nghiệm du lịch</h2>
+        <p class="subHeadLine text-center">
+          Lên rừng xuống biển. Trọn vẹn Việt Nam
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="singlePost">
+              <a href="">
+                <img
+                  src="https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720"
+                  alt=""
+                />
+                <div class="singlePost__content">
+                  <h3 class="title">Chỗ ở độc đáo</h3>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatum, laboriosam hic! Ab dolores ipsa iusto, culpa
+                    ullam enim suscipit impedit
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="singlePost">
+              <a href="">
+                <img
+                  src="https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720"
+                  alt=""
+                />
+                <div class="singlePost__content">
+                  <h3 class="title">Chỗ ở độc đáo</h3>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatum, laboriosam hic! Ab dolores ipsa iusto, culpa
+                    ullam enim suscipit impedit
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="singlePost">
+              <a href="">
+                <img
+                  src="https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720"
+                  alt=""
+                />
+                <div class="singlePost__content">
+                  <h3 class="title">Chỗ ở độc đáo</h3>
+                  <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Voluptatum, laboriosam hic! Ab dolores ipsa iusto, culpa
+                    ullam enim suscipit impedit
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <a href="#" class="more">Xem thêm</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="p-3">
+      <div class="container text-center">
+        <p>© 2020 EMotel, Inc. All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Select2 -> Custom input form -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <!-- Isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Datedroper -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/datedropper/2.0/datedropper.min.js"
+      integrity="sha512-rskIPpxX/1P8HET+OXZ3Ng4JvluevS/qCQHDpVdRPLYVMGkMP/yWOzgRGeSy2xstRUO+FvtgSCHKiL3XXBCQ/Q=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
