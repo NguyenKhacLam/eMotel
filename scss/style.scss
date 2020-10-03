@@ -249,16 +249,6 @@ footer {
   h1 {
     @include headLine;
   }
-  .breadcrumb {
-    background-color: transparent;
-    justify-content: center;
-    color: $color-black;
-    .breadcrumb-item {
-    }
-    .active {
-      color: $color-pink;
-    }
-  }
 }
 
 .postList {
@@ -273,6 +263,82 @@ footer {
 }
 
 // ---------------End Blog page--------------------------------
+
+// ----------------------Single Post ----------------------------
+.singlePostBanner {
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+.singlePostContent {
+  margin-top: 60px;
+}
+
+.relatedPost {
+  margin-top: 60px;
+}
+
+.addComment {
+  margin-bottom: 30px;
+  h4 {
+    font-size: 1rem;
+  }
+  form {
+    button {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.comments {
+  margin-top: 60px;
+  .headLine {
+    margin-bottom: 30px;
+  }
+  .singleComment {
+    margin-bottom: 30px;
+    display: flex;
+    .singleComment__image {
+      margin-right: 2rem;
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+    .singleComment__details {
+      .singleComment__name {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+      .singleComment__date {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: $color-lightgray;
+      }
+    }
+  }
+}
+
+// ----------------------End Single Post -------------------------
+
+.breadcrumb {
+  background-color: transparent;
+  justify-content: center;
+  color: $color-black;
+  .breadcrumb-item {
+  }
+  .active {
+    color: $color-pink;
+  }
+}
 
 // Masonry
 .grid {
